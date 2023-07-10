@@ -1,0 +1,57 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 90vh;
+    width: 100vw;
+}
+
+.home h3{
+    margin: 2rem;
+}
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #75757573;
+    width: 60vw;
+    height: 60vh;
+    border-radius: 1rem;
+
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.profile h4 span {
+    margin-left: 0.5rem;
+    color: #ffd900;
+}
+
+[data-theme="light"] .profile h4 span {
+    color: #a58c00;
+}
+
+.profile h4 {
+    font-weight: 500;
+}
+
+.description {
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.description span p {
+    margin-top: 1rem;
+    color: #00ac00;
+}

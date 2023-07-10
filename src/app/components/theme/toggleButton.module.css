@@ -1,0 +1,26 @@
+.toggleButton {
+    height: 2.6rem;
+    width: 2.6rem;
+    background-color: #018f01;
+    border: none;
+    border-radius: 10rem;
+
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+}
+
+.toggleButton:hover {
+    box-shadow: 0 0 1rem #018f01;
+}
+
+.toggleButton:active {
+    background-color: #00b300;
+}
+
+
+.image {
+    width: 2rem;
+    height: 2rem;
+}
