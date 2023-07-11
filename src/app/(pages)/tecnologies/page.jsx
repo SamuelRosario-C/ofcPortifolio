@@ -14,10 +14,10 @@ import iconGit from '@/assets/image-tech/git.svg';
 import iconFigma from '@/assets/image-tech/figma.svg';
 
 //Cofing
-import styles from './tecnologies.module.css'
+import styles from './tech.module.css'
 import Navbar from '@/app/components/navbar/page';
 import Image from 'next/image';
-// import tech from '@/assets/image-project/projectA.jpeg'
+
 export const metadata = {
     title: "Tecnologias",
     description: "descrição da page"
