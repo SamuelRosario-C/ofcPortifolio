@@ -11,7 +11,7 @@ import { useTheme } from 'next-themes';
 const ThemeToggle = () => {
 
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme } = useTheme(localStorage.getItem("theme") || "light")
 
   useEffect(() => {
     setMounted(true)
@@ -33,8 +33,6 @@ const ThemeToggle = () => {
           : <Image className={styled.image} alt='moon' src={dark} />}
       </button>
     </>
-
-
   );
 };
 

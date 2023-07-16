@@ -1,7 +1,6 @@
 .toggleButton {
     height: 2.6rem;
     width: 2.6rem;
-    background-color: #018f01;
     border: none;
     border-radius: 10rem;
 
@@ -12,15 +11,27 @@
 }
 
 .toggleButton:hover {
-    box-shadow: 0 0 1rem #018f01;
+    /* animação */
 }
 
 .toggleButton:active {
-    background-color: #00b300;
+    /* animação */
 }
 
 
 .image {
     width: 2rem;
     height: 2rem;
+}
+
+/* TEMA */
+
+
+[data-theme="dark"] .toggleButton {
+    background: #dadada;
+}
+
+[data-theme="light"] .toggleButton {
+    background: #444444;
+
 }
