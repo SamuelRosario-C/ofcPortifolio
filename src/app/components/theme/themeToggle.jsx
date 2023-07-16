@@ -11,7 +11,7 @@ import { useTheme } from 'next-themes';
 const ThemeToggle = () => {
 
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme(localStorage.getItem("theme") || "light")
+  const { theme, setTheme } = useTheme()
 
   useEffect(() => {
     setMounted(true)
