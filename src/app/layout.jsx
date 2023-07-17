@@ -20,8 +20,6 @@ export default function RootLayout({ children }) {
           <ThemeToggle />
           {children} 
         </Providers>
-
-        
       </body>
 
     </html>

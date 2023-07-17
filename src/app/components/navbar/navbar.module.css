@@ -5,10 +5,34 @@
     gap: 1.5rem;
     height: 10vh;
     width: 100vw;
-    background-color: #7c7c7c34;
 }
 
-.navbar a {
+.links {
     text-decoration: none;
     padding: 0 0.5rem;
+}
+
+.links:hover {
+    opacity: 0.8;
+}
+
+/* TEMA */
+
+[data-theme="dark"] .navbar {
+    background: #0c0c0c;
+    box-shadow: 0 0 5rem #292929;
+}
+
+[data-theme="dark"] .links {
+    color: #dadada;
+}
+
+[data-theme="light"] .navbar {
+    
+    background: #fafafa;
+    box-shadow: 0 0 5rem #f3f2f2;
+}
+
+[data-theme="light"] .links {
+    color: #1a1a1a;
 }

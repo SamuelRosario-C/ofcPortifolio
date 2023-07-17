@@ -26,9 +26,9 @@
 .tabelTechnologies {
     display: flex;
     align-items: center;
-    background-color: #4747475e;
+    /* background-color: #4747475e; */
     /* #9c9c9c5e */
-    box-shadow: 0 0 0.5rem #014e0171;
+    /* box-shadow: 0 0 0.5rem #014e0171; */
     width: 18rem;
     height: 18vh;
     padding-left: 0.5rem;
@@ -40,4 +40,21 @@
     flex-direction: column;
     align-items: center;
     margin: 0 0.5rem;
+}
+
+.techIllustrated h4 {
+    margin-bottom: 0.5rem;
+}
+
+/* TEMA */
+[data-theme="dark"] .tabelTechnologies {
+    background: #292929;
+    color: #f3f2f2;
+    box-shadow: 0 0 0.5rem #292929;
+}
+
+[data-theme="light"] .tabelTechnologies {
+    background: #f3f2f2;
+    color: #292929;
+    box-shadow: 0 0 0.5rem #f3f2f2;
 }

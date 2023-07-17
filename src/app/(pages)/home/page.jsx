@@ -2,6 +2,7 @@ import styles from './home.module.css';
 import Navbar from '@/app/components/navbar/page';
 import Image from 'next/image';
 import perfil from '@/assets/img/perfil.jpeg';
+// import FooterBar from '@/app/components/footerbar/page';
 
 export const metadata = {
     title: "Sobre Mim",
@@ -12,7 +13,7 @@ export default function Home() {
     return (
         <>
             <Navbar />
-            <div className={styles.home}>
+            <section className={styles.home}>
                 <h3>Sobre Mim</h3>
                 <div className={styles.aboutme}>
                     <div className={styles.profile}>
@@ -31,7 +32,8 @@ export default function Home() {
                         </span>
                     </div>
                 </div>
-            </div>
+            </section>
+            {/* <FooterBar/> */}
         </>
     )
 }
