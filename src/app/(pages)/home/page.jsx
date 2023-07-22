@@ -14,7 +14,6 @@ export default function Home() {
         <>
             <Navbar />
             <section className={styles.home}>
-                <h3>Sobre Mim</h3>
                 <div className={styles.aboutme}>
                     <div className={styles.profile}>
                         <Image src={perfil} alt="perfil imagem" />

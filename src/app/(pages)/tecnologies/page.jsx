@@ -46,7 +46,7 @@ const allTechnologies = [{
 },{
     imgTechnology: iconstyledComponents,
     description: 'alto conhecimento em styled-components, facil de utlizar',
-    nameTech: 'styled-components'
+    nameTech: 'StyledComponents'
 },{
     imgTechnology: iconExpress,
     description: 'Facilita criação de rotas e conecta frontend',
@@ -83,7 +83,6 @@ export default function Home() {
         <>
             <Navbar />
             <main className={styles.boxTechnologies}>
-                <h3>Tecnologias</h3>
                 <section className={styles.technologies}>
                     
                     {/* aqui onde vai configuração padrão div que vai zer clonada */}

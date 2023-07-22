@@ -17,7 +17,6 @@ export default function Projects() {
         <>
             <Navbar/>
             <section className={styled.boxProjects}>
-                <h3>Projects</h3>
                 <article className={styled.projects}>
                     <div className={styled.tableProjects}>
                         <span className={styled.textsProject}>

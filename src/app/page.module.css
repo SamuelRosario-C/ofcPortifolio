@@ -1,5 +1,5 @@
 .boxEnter {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -54,6 +54,10 @@
 /* Modo dark e light da page inicial */
 /* DARK */
 
+[data-theme="dark"] .boxEnter {
+  display: flex;
+}
+
 [data-theme="dark"] .job, .lastName {
   color: #dadada;
 }
@@ -69,6 +73,11 @@
 
 
 /* LIGHT */
+
+[data-theme="light"] .boxEnter {
+  display: flex;
+}
+
 [data-theme="light"] .boxEnter h2 {
   border-left: 1px solid #1a1a1a;
 }
