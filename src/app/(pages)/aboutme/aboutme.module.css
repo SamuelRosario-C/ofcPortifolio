@@ -206,14 +206,15 @@
 }
 
 @media (max-width: 650px) {
+
     .aboutme {
         flex-direction: column-reverse;
         padding: 1rem 0;
         width: 100%;
+        height: 80vh;
     }
 
     .secAboutme {
-        height: 100%;
         margin: 1rem 0;
     }
 
@@ -222,10 +223,10 @@
         font-size: 8vw;
     }
 
-    .description{
+    .description {
         margin: 0 1rem;
     }
-    
+
     .description p {
         text-align: center;
     }

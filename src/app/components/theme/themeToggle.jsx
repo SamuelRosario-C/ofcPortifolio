@@ -10,7 +10,7 @@ import { useTheme } from 'next-themes';
 
 const ThemeToggle = () => {
 
-  const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState()
   const { theme, setTheme } = useTheme()
 
   useEffect(() => {
@@ -22,15 +22,15 @@ const ThemeToggle = () => {
   }
 
   function toggleTheme() {
-    setTheme(theme === 'light' ? 'dark' : 'light')
+    setTheme(theme === 'dark' ? 'light' : 'dark')
   }
 
   return (
     <>
       <button className={styled.toggleButton} onClick={toggleTheme}>
-        {theme === 'light'
-          ? <Image className={styled.image} alt='sun' src={light} />
-          : <Image className={styled.image} alt='moon' src={dark} />}
+        {theme === 'dark'
+          ? <Image className={styled.image} alt='sun' src={dark}  />
+          : <Image className={styled.image} alt='moon' src={light} />}
       </button>
     </>
   );
