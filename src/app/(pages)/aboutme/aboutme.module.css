@@ -212,10 +212,11 @@
         padding: 1rem 0;
         width: 100%;
         height: 80vh;
+        border: none;
     }
 
     .secAboutme {
-        margin: 1rem 0;
+        height: 100%;
     }
 
     .title {
@@ -238,10 +239,6 @@
 }
 
 @media (max-width: 415px) {
-    .aboutme {
-        border: none;
-
-    }
 
     .buttonLinkedInGithub a {
         font-size: 5vw;
