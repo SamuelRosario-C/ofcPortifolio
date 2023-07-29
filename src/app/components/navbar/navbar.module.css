@@ -1,5 +1,18 @@
-.navbar {
+.headerBar {
     display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+}
+
+.backIcon svg {
+    width: 3.5vw;
+    min-width: 1.2rem;
+    max-width: 2rem;
+}
+
+.navbar {
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
@@ -18,22 +31,49 @@
 
 /* TEMA */
 
-[data-theme="dark"] .navbar {
+[data-theme="dark"] .headerBar {
     display: flex;
     background: #0c0c0c;
     box-shadow: 0 0 5rem #292929;
+}
+
+[data-theme="dark"] .backIcon svg {
+    fill: #dadada;
 }
 
 [data-theme="dark"] .links {
     color: #dadada;
 }
 
-[data-theme="light"] .navbar {
+[data-theme="light"] .headerBar {
     display: flex;
     background: #fafafa;
     box-shadow: 0 0 5rem #f3f2f2;
 }
 
+[data-theme="light"] .backIcon svg {
+    fill: #292929;
+}
+
 [data-theme="light"] .links {
     color: #292929;
+}
+
+/* Responsividade */
+@media (max-width: 530px) {
+    .navbar {
+        font-size: 3.5vw;
+        gap: 0;
+    }
+}
+
+@media (max-width: 291px) {
+    .navbar {
+        font-size: 3vw;
+        gap: 0;
+    }
+
+    .backIcon svg {
+        min-width: 1rem;
+    }
 }

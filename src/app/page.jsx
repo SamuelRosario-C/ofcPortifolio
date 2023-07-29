@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import styles from './page.module.css'
 
-export default function Page() {
+export default function Home() {
   return (
     <div className={styles.boxEnter}>
       <h2>
@@ -11,7 +11,7 @@ export default function Page() {
       </h2>
       
       <h4 className={styles.job}>Programador Web</h4>
-      <Link className={styles.view} href="/home">Sobre mim</Link>
+      <Link className={styles.view} href="/aboutme">Sobre mim</Link>
     </div>
   )
 }

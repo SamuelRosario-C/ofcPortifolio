@@ -5,6 +5,7 @@ import projectImg from "@/assets/image-project/projectA.jpeg"
 
 
 import node from "@/assets/image-tech/node.svg"
+import next from "@/assets/image-tech/next.svg"
 import Image from "next/image"
 
 export const metadata = {
@@ -13,95 +14,35 @@ export const metadata = {
 }
 
 export default function Projects() {
+    const projects = [{
+        nameProject: "Nome do projeto",
+        projectNodeOrNext: next,
+        imgProject: projectImg,
+        description: "Descrição do projeto",
+    }]
+
     return (
         <>
-            <Navbar/>
+            <Navbar />
             <section className={styled.boxProjects}>
                 <article className={styled.projects}>
-                    <div className={styled.tableProjects}>
-                        <span className={styled.textsProject}>
-                            <h3>GroundDesk</h3>
-                            <p>Descrição do projeto</p>
-                        </span>
-                        <div className={styled.imageAndIconProjects}>
-                            <Image width={40} height={40} src={node} alt="node" />
-                            <Image width={155} height={0} src={projectImg} alt="project" />
+
+                    {projects.map((allProjects) => (
+
+                        <div className={styled.tableProjects}>
+                            <span className={styled.textsProject}>
+                                <h3>{allProjects.nameProject}</h3>
+                                <p>{allProjects.description}</p>
+                            </span>
+                            <div className={styled.imageAndIconProjects}>
+                                <Image width={35} height={35} src={allProjects.projectNodeOrNext} alt="tec" />
+                            </div>
+                            <Image width={155} height={0} src={allProjects.imgProject} alt="project" />
                         </div>
-                    </div>
-                    <div className={styled.tableProjects}>
-                        <span className={styled.textsProject}>
-                            <h3>GroundDesk</h3>
-                            <p>Descrição do projeto</p>
-                        </span>
-                        <div className={styled.imageAndIconProjects}>
-                            <Image width={40} height={40} src={node} alt="node" />
-                            <Image width={155} height={0} src={projectImg} alt="project" />
-                        </div>
-                    </div>
-                    <div className={styled.tableProjects}>
-                        <span className={styled.textsProject}>
-                            <h3>GroundDesk</h3>
-                            <p>Descrição do projeto</p>
-                        </span>
-                        <div className={styled.imageAndIconProjects}>
-                            <Image width={40} height={40} src={node} alt="node" />
-                            <Image width={155} height={0} src={projectImg} alt="project" />
-                        </div>
-                    </div>
-                    <div className={styled.tableProjects}>
-                        <span className={styled.textsProject}>
-                            <h3>GroundDesk</h3>
-                            <p>Descrição do projeto</p>
-                        </span>
-                        <div className={styled.imageAndIconProjects}>
-                            <Image width={40} height={40} src={node} alt="node" />
-                            <Image width={155} height={0} src={projectImg} alt="project" />
-                        </div>
-                    </div>
-                    <div className={styled.tableProjects}>
-                        <span className={styled.textsProject}>
-                            <h3>GroundDesk</h3>
-                            <p>Descrição do projeto</p>
-                        </span>
-                        <div className={styled.imageAndIconProjects}>
-                            <Image width={40} height={40} src={node} alt="node" />
-                            <Image width={155} height={0} src={projectImg} alt="project" />
-                        </div>
-                    </div>
-                    <div className={styled.tableProjects}>
-                        <span className={styled.textsProject}>
-                            <h3>GroundDesk</h3>
-                            <p>Descrição do projeto</p>
-                        </span>
-                        <div className={styled.imageAndIconProjects}>
-                            <Image width={40} height={40} src={node} alt="node" />
-                            <Image width={155} height={0} src={projectImg} alt="project" />
-                        </div>
-                    </div>
-                    <div className={styled.tableProjects}>
-                        <span className={styled.textsProject}>
-                            <h3>GroundDesk</h3>
-                            <p>Descrição do projeto</p>
-                        </span>
-                        <div className={styled.imageAndIconProjects}>
-                            <Image width={40} height={40} src={node} alt="node" />
-                            <Image width={155} height={0} src={projectImg} alt="project" />
-                        </div>
-                    </div>
-                    <div className={styled.tableProjects}>
-                        <span className={styled.textsProject}>
-                            <h3>GroundDesk</h3>
-                            <p>Descrição do projeto</p>
-                        </span>
-                        <div className={styled.imageAndIconProjects}>
-                            <Image width={40} height={40} src={node} alt="node" />
-                            <Image width={155} height={0} src={projectImg} alt="project" />
-                        </div>
-                    </div>
-                    
+                    ))}
                 </article>
             </section>
-            
+
         </>
     )
 }

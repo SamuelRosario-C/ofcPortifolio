@@ -35,6 +35,7 @@
     border-radius: 0.2rem;
     height: 1.5rem;
     padding: 0.1rem 0.2rem;
+    margin-left: 0.5rem;
 }
 
 /* THEME */
@@ -46,6 +47,7 @@
 
 [data-theme="dark"] .tableUpgrades {
     background-color: #292929;
+    box-shadow: 0 0 1rem #292929;
     color: #e9e9e9;
 
 }
@@ -62,6 +64,7 @@
 
 [data-theme="light"] .tableUpgrades {
     background: #c0c0c0;
+    box-shadow: 0 0 1rem #c0c0c0;
     color: #1d1d1d;
 }
 

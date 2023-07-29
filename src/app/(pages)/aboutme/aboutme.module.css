@@ -1,0 +1,255 @@
+.secAboutme {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+.secAboutme h3 {
+    margin: 2rem;
+}
+
+.aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 70%;
+    border-radius: 1rem;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    padding: 0 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    animation: text-change 5s linear infinite;
+}
+
+@keyframes text-change {
+    0% {
+        text-shadow: 0 0 1rem red;
+    }
+
+    10% {
+        text-shadow: 0 0 1rem orange;
+    }
+
+    20% {
+        text-shadow: 0 0 1rem yellow;
+    }
+
+    30% {
+        text-shadow: 0 0 1rem green;
+    }
+
+    40% {
+        text-shadow: 0 0 1rem blue;
+    }
+
+    50% {
+        text-shadow: 0 0 1rem indigo;
+    }
+
+    60% {
+        text-shadow: 0 0 1rem violet;
+    }
+
+    70% {
+        text-shadow: 0 0 1rem indigo;
+    }
+
+    80% {
+        text-shadow: 0 0 1rem blue;
+    }
+
+    90% {
+        text-shadow: 0 0 1rem green;
+    }
+
+    100% {
+        text-shadow: 0 0 1rem yellow;
+    }
+}
+
+.profile img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    animation: color-change-box 5s linear infinite;
+}
+
+@keyframes color-change-box {
+    0% {
+        box-shadow: 0 0 0.5rem red;
+    }
+
+    10% {
+        box-shadow: 0 0 0.5rem orange;
+    }
+
+    20% {
+        box-shadow: 0 0 0.5rem yellow;
+    }
+
+    30% {
+        box-shadow: 0 0 0.5rem green;
+    }
+
+    40% {
+        box-shadow: 0 0 0.5rem blue;
+    }
+
+    50% {
+        box-shadow: 0 0 0.5rem indigo;
+    }
+
+    60% {
+        box-shadow: 0 0 0.5rem violet;
+    }
+
+    70% {
+        box-shadow: 0 0 0.5rem indigo;
+    }
+
+    80% {
+        box-shadow: 0 0 0.5rem blue;
+    }
+
+    90% {
+        box-shadow: 0 0 0.5rem green;
+    }
+
+    100% {
+        box-shadow: 0 0 0.5rem yellow;
+    }
+}
+
+.buttonLinkedInGithub {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.buttonLinkedInGithub a {
+    text-decoration: none;
+    border-radius: 0.5rem;
+    width: 20%;
+    max-width: 10rem;
+    min-width: 8rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedIn {
+    background-color: #1293d2;
+    color: #dadada;
+}
+
+.gitHub {
+    color: #dadada;
+    background-color: #424242;
+}
+
+.linkedIn img, .gitHub img {
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.linkedIn:hover {
+    box-shadow: 0 0 0.5rem #1293d2;
+}
+
+.gitHub:hover {
+    box-shadow: 0 0 0.5rem #424242;
+}
+
+/* TEMA */
+[data-theme="dark"] .secAboutme {
+    display: flex;
+}
+
+[data-theme="dark"] .description {
+    color: #dadada;
+}
+
+[data-theme="light"] .secAboutme {
+    display: flex;
+}
+
+[data-theme="light"] .description {
+    color: #292929;
+}
+
+/* Responsividade */
+@media (max-width: 980px) {
+    .title {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 740px) {
+    .aboutme {
+        border: none;
+        border-bottom: 2px solid;
+        border-top: 2px solid;
+        width: 90%;
+
+    }
+}
+
+@media (max-width: 650px) {
+    .aboutme {
+        flex-direction: column-reverse;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .secAboutme {
+        height: 100%;
+        margin: 1rem 0;
+    }
+
+    .title {
+        margin-top: 0.5rem;
+        font-size: 8vw;
+    }
+
+    .description{
+        margin: 0 1rem;
+    }
+    
+    .description p {
+        text-align: center;
+    }
+
+    .buttonLinkedInGithub {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 415px) {
+    .aboutme {
+        border: none;
+
+    }
+
+    .buttonLinkedInGithub a {
+        font-size: 5vw;
+        min-width: 50%;
+        height: 2rem;
+    }
+
+    .profile img {
+        width: 10rem;
+        height: 10rem;
+    }
+}

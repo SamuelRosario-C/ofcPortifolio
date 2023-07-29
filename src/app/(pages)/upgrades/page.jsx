@@ -5,61 +5,32 @@ export const metadata = {
     description: "descrição da page"
 }
 
+const allUpgrades = [{
+    typeUpgrade: "Upgrades em andamento ...",
+    description: `
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis at soluta repellendus cupiditate eaque cumque aperiam modi dicta tenetur architecto minima, quos cum eveniet ipsam. Dolorem iure fuga eum esse! 
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi consequatur quaerat incidunt, laboriosam ipsa ex omnis veritatis reiciendis voluptatum aspernatur. Quae eum nisi id aliquam iste porro vero natus sapiente.`,
+    dataUpgrade: "22/07/2023"
+}]
+
 export default function Projects() {
     return (
         <>
             <Navbar />
             <section className={styled.boxUpgrades}>
                 <article className={styled.tableUpgrades}>
-                    <div className={styled.upgrades}>
-                        <h3 className={styled.subjectUpgrades}>Upgrades em andamento...</h3>
-                        <div className={styled.textsUpgrades}>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus saepe quasi ut distinctio obcaecati consectetur. Voluptatibus sapiente est ratione tempora, similique vitae odio tempore distinctio impedit repellat. Porro, et.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nesciunt quae mollitia eligendi et doloremque minima cupiditate libero, illum qui in? Porro, ratione molestias quisquam enim ullam accusamus vero possimus?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quia cumque pariatur quos perspiciatis soluta, quis ipsam nulla cum necessitatibus quasi. Quam optio vero eligendi quis fuga error ratione reprehenderit.
-                            </p>
-                            <span className={styled.dateUpgrades}>22/07/2023</span>
+                    {/*  */}
+                    {allUpgrades.map((upgrade) =>(
+                        <div className={styled.upgrades}>
+                            <h3 className={styled.subjectUpgrades}>{upgrade.typeUpgrade}</h3>
+                            <div className={styled.textsUpgrades}>
+                                <p>{upgrade.description}</p>
+                                <span className={styled.dateUpgrades}>{upgrade.dataUpgrade}</span>
+                            </div>
+
                         </div>
-
-                    </div>
-
-                    <div className={styled.upgrades}>
-                        <h3 className={styled.subjectUpgrades}>Upgrades em andamento...</h3>
-                        <div className={styled.textsUpgrades}>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus saepe quasi ut distinctio obcaecati consectetur. Voluptatibus sapiente est ratione tempora, similique vitae odio tempore distinctio impedit repellat. Porro, et.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nesciunt quae mollitia eligendi et doloremque minima cupiditate libero, illum qui in? Porro, ratione molestias quisquam enim ullam accusamus vero possimus?
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quia cumque pariatur quos perspiciatis soluta, quis ipsam nulla cum necessitatibus quasi. Quam optio vero eligendi quis fuga error ratione reprehenderit.
-                            </p>
-                            <span className={styled.dateUpgrades}>22/07/2023</span>
-                        </div>
-
-                    </div>
-                    <div className={styled.upgrades}>
-                        <h3 className={styled.subjectUpgrades}>Upgrades em andamento...</h3>
-                        <div className={styled.textsUpgrades}>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus saepe quasi ut distinctio obcaecati consectetur. Voluptatibus sapiente est ratione tempora, similique vitae odio tempore distinctio impedit repellat. Porro, et.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nesciunt quae mollitia eligendi et doloremque minima cupiditate libero, illum qui in? Porro, ratione molestias quisquam enim ullam accusamus vero possimus?
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quia cumque pariatur quos perspiciatis soluta, quis ipsam nulla cum necessitatibus quasi. Quam optio vero eligendi quis fuga error ratione reprehenderit.
-                            </p>
-                            <span className={styled.dateUpgrades}>22/07/2023</span>
-                        </div>
-
-                    </div>
-                    <div className={styled.upgrades}>
-                        <h3 className={styled.subjectUpgrades}>Upgrades em andamento...</h3>
-                        <div className={styled.textsUpgrades}>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusamus saepe quasi ut distinctio obcaecati consectetur. Voluptatibus sapiente est ratione tempora, similique vitae odio tempore distinctio impedit repellat. Porro, et.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit nesciunt quae mollitia eligendi et doloremque minima cupiditate libero, illum qui in? Porro, ratione molestias quisquam enim ullam accusamus vero possimus?
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores quia cumque pariatur quos perspiciatis soluta, quis ipsam nulla cum necessitatibus quasi. Quam optio vero eligendi quis fuga error ratione reprehenderit.
-                            </p>
-                            <span className={styled.dateUpgrades}>22/07/2023</span>
-                        </div>
-
-                    </div>
+                    ))}
+                    {/*  */}
 
                 </article>
 

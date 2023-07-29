@@ -85,7 +85,6 @@ export default function Home() {
             <main className={styles.boxTechnologies}>
                 <section className={styles.technologies}>
                     
-                    {/* aqui onde vai configuração padrão div que vai zer clonada */}
                     {allTechnologies.map((technology) => (
                         <div className={styles.tabelTechnologies}>
                             <div className={styles.techIllustrated}>
