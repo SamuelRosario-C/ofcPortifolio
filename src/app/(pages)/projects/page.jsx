@@ -19,6 +19,21 @@ export default function Projects() {
         projectNodeOrNext: next,
         imgProject: projectImg,
         description: "Descrição do projeto",
+    }, {
+        nameProject: "Nome do projeto",
+        projectNodeOrNext: next,
+        imgProject: projectImg,
+        description: "Descrição do projeto",
+    }, {
+        nameProject: "Nome do projeto",
+        projectNodeOrNext: next,
+        imgProject: projectImg,
+        description: "Descrição do projeto",
+    }, {
+        nameProject: "Nome do projeto",
+        projectNodeOrNext: next,
+        imgProject: projectImg,
+        description: "Descrição do projeto",
     }]
 
     return (

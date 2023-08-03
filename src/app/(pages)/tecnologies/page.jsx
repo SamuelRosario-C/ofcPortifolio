@@ -46,7 +46,7 @@ const allTechnologies = [{
 },{
     imgTechnology: iconstyledComponents,
     description: 'alto conhecimento em styled-components, facil de utlizar',
-    nameTech: 'StyledComponents'
+    nameTech: 'Styled-Components'
 },{
     imgTechnology: iconExpress,
     description: 'Facilita criação de rotas e conecta frontend',
@@ -87,11 +87,11 @@ export default function Home() {
                     
                     {allTechnologies.map((technology) => (
                         <div className={styles.tabelTechnologies}>
+                            <h4>{technology.nameTech}</h4>
                             <div className={styles.techIllustrated}>
-                                <h4>{technology.nameTech}</h4>
                                 <Image width={60} height={60} src={technology.imgTechnology} alt={technology.nameTech} />
+                                <p>{technology.description}</p>
                             </div>
-                            <p>{technology.description}</p>
                         </div>
                     ))}
                 </section>

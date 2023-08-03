@@ -16,11 +16,10 @@
     align-items: center;
     justify-content: center;
     width: 80%;
-    height: 70%;
     border-radius: 1rem;
     border-left: 2px solid;
     border-right: 2px solid;
-    padding: 0 1rem;
+    padding: 5rem 1rem;
 }
 
 .title {
