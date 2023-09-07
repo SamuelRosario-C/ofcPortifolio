@@ -6,9 +6,9 @@
 }
 
 .backIcon svg {
-    width: 3.5vw;
-    min-width: 1.2rem;
-    max-width: 2rem;
+    width: 100%;
+    min-width: 1rem;
+    max-width: 1.5rem;
 }
 
 .navbar {
@@ -16,7 +16,9 @@
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
-    height: 8vh;
+    height: 100%;
+    /* max-height: 3rem; */
+    min-height: 4rem;
     width: 100%;
 }
 
@@ -71,9 +73,5 @@
     .navbar {
         font-size: 3vw;
         gap: 0;
-    }
-
-    .backIcon svg {
-        min-width: 1rem;
     }
 }
