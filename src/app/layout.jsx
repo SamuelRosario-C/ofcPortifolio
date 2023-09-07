@@ -4,6 +4,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import ThemeToggle from './components/theme/themeToggle'
 import Providers from './providers'
+import Navbar from './components/navbar/page'
 export const metadata = {
   title: "Bem-vindo",
   description: "descrição da page"

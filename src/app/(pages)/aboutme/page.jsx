@@ -1,5 +1,6 @@
 import styles from './aboutme.module.css';
 import Navbar from '@/app/components/navbar/page';
+import FooterBar from '@/app/components/footerbar/page';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -36,6 +37,7 @@ export default function Aboutme() {
                     </div>
                 </div>
             </section>
+            <FooterBar />
 
         </>
     )
