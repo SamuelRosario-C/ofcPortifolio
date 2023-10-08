@@ -6,8 +6,8 @@
 
 .backIcon svg {
     width: 100%;
-    min-width: 1rem;
-    max-width: 1.5rem;
+    min-width: 1.5rem;
+    max-width: 0.5rem;
 }
 
 .navbar {
@@ -16,7 +16,7 @@
     align-items: center;
     gap: 1.5rem;
     height: 100%;
-    /* max-height: 3rem; */
+    max-height: 3rem;
     min-height: 4rem;
     width: 90%;
 }
@@ -24,6 +24,7 @@
 .links {
     text-decoration: none;
     padding: 0 0.5rem;
+    white-space: nowrap;
 }
 
 .links:hover {
@@ -59,16 +60,25 @@
 }
 
 /* Responsividade */
-@media (max-width: 530px) {
+@media (max-width: 690px) {
     .navbar {
-        font-size: 3.5vw;
         gap: 0;
     }
 }
 
-@media (max-width: 291px) {
+@media (max-width: 540px) {
     .navbar {
-        font-size: 3vw;
-        gap: 0;
+        font-size: calc(2.5vw - -1px);
     }
+
+    .backIcon svg {
+        min-width: calc(2vw - -5px);
+    }
+}
+
+@media (max-width: 390px) {
+    .navbar {
+        font-size: calc(2.8vw - 1px);
+    }
+
 }
