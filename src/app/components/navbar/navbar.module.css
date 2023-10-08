@@ -18,7 +18,7 @@
     height: 100%;
     /* max-height: 3rem; */
     min-height: 4rem;
-    width: 100%;
+    width: 90%;
 }
 
 .links {
@@ -34,8 +34,7 @@
 
 [data-theme="dark"] .headerBar {
     display: flex;
-    background: linear-gradient(90deg, rgba(26, 26, 26, 1) 0%, #008001 50%, rgba(26, 26, 26, 1) 100%);
-    box-shadow: 0 0 1rem #008001;
+    box-shadow: 0 -1rem 2rem #ffffff;
 }
 
 [data-theme="dark"] .backIcon svg {
@@ -48,8 +47,7 @@
 
 [data-theme="light"] .headerBar {
     display: flex;
-    background: linear-gradient(90deg, rgba(226, 226, 226, 1) 0%, #00d802 50%, rgba(226, 226, 226, 1) 100%);
-    box-shadow: 0 0 1rem #00d802;
+    box-shadow: 0 -1rem 2rem #000000;
 }
 
 [data-theme="light"] .backIcon svg {

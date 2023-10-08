@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
-    width: 100vw;
+    height: 95vh;
+    width: 100%;
 }
 
 .secAboutme h3 {
@@ -31,47 +31,47 @@
 
 @keyframes text-change {
     0% {
-        text-shadow: 0 0 1rem red;
+        text-shadow: 0 0 0.5rem #00FA9A;
     }
 
     10% {
-        text-shadow: 0 0 1rem orange;
+        text-shadow: 0 0 0.5rem #00FF7F;
     }
 
     20% {
-        text-shadow: 0 0 1rem yellow;
+        text-shadow: 0 0 0.5rem #98FB98;
     }
 
     30% {
-        text-shadow: 0 0 1rem green;
+        text-shadow: 0 0 0.5rem #90EE90;
     }
 
     40% {
-        text-shadow: 0 0 1rem blue;
+        text-shadow: 0 0 0.5rem #8FBC8F;
     }
 
     50% {
-        text-shadow: 0 0 1rem indigo;
+        text-shadow: 0 0 0.5rem #3CB371;
     }
 
     60% {
-        text-shadow: 0 0 1rem violet;
+        text-shadow: 0 0 0.5rem #2E8B57;
     }
 
     70% {
-        text-shadow: 0 0 1rem indigo;
+        text-shadow: 0 0 0.5rem #006400;
     }
 
     80% {
-        text-shadow: 0 0 1rem blue;
+        text-shadow: 0 0 0.5rem #008000;
     }
 
     90% {
-        text-shadow: 0 0 1rem green;
+        text-shadow: 0 0 0.5rem #228B22;
     }
 
     100% {
-        text-shadow: 0 0 1rem yellow;
+        text-shadow: 0 0 0.5rem #00FA9A;
     }
 }
 
@@ -83,48 +83,49 @@
 }
 
 @keyframes color-change-box {
+
     0% {
-        box-shadow: 0 0 0.5rem red;
+        box-shadow: 0 0 0.5rem #00FA9A;
     }
 
     10% {
-        box-shadow: 0 0 0.5rem orange;
+        box-shadow: 0 0 0.5rem #00FF7F;
     }
 
     20% {
-        box-shadow: 0 0 0.5rem yellow;
+        box-shadow: 0 0 0.5rem #98FB98;
     }
 
     30% {
-        box-shadow: 0 0 0.5rem green;
+        box-shadow: 0 0 0.5rem #90EE90;
     }
 
     40% {
-        box-shadow: 0 0 0.5rem blue;
+        box-shadow: 0 0 0.5rem #8FBC8F;
     }
 
     50% {
-        box-shadow: 0 0 0.5rem indigo;
+        box-shadow: 0 0 0.5rem #3CB371;
     }
 
     60% {
-        box-shadow: 0 0 0.5rem violet;
+        box-shadow: 0 0 0.5rem #2E8B57;
     }
 
     70% {
-        box-shadow: 0 0 0.5rem indigo;
+        box-shadow: 0 0 0.5rem #006400;
     }
 
     80% {
-        box-shadow: 0 0 0.5rem blue;
+        box-shadow: 0 0 0.5rem #008000;
     }
 
     90% {
-        box-shadow: 0 0 0.5rem green;
+        box-shadow: 0 0 0.5rem #228B22;
     }
 
     100% {
-        box-shadow: 0 0 0.5rem yellow;
+        box-shadow: 0 0 0.5rem #00FA9A;
     }
 }
 
@@ -212,7 +213,7 @@
         flex-direction: column-reverse;
         padding: 1rem 0;
         width: 100%;
-        height: 80vh;
+        height: 100vh;
 
     }
 

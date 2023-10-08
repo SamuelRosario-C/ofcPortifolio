@@ -16,6 +16,7 @@ import iconFigma from '@/assets/image-tech/figma.svg';
 //Cofing
 import styles from './tech.module.css'
 import Navbar from '@/app/components/navbar/page';
+import FooterBar from '@/app/components/footerbar/page';
 import Image from 'next/image';
 
 export const metadata = {
@@ -96,6 +97,7 @@ export default function Home() {
                     ))}
                 </section>
             </main>
+            <FooterBar/>
         </>
     )
 }

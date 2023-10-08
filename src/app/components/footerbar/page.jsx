@@ -10,30 +10,22 @@ import whatsapp from "@/assets/icons/whatsapp.svg"
 export default function FooterBar() {
     return (
         <footer className={styled.footerBar}>
+            <p>Fique avontade para entrar em contato! através:</p>
             <div className={styled.footerBox}>
-                <div className="footerSocial">
-                    <p>Minhas Rede Sociais</p>
                     <Link href={''} className="footerSocialIcons">
-                        <Image src={linkedin} alt="linkedIn"/> LinkedIn
+                        <Image src={linkedin} alt="linkedIn"/>
                     </Link>
                     <Link href={''} className="footerSocialIcons">
-                        <Image src={github} alt="github" /> Github
-                    </Link>
-                </div>
-                <div className="footerContat">
-                    <p></p>
-                    <Link href={''} className="footerSocialIcons">
-                        <Image src={gmail} alt="gmail" /> Gmail
+                        <Image src={github} alt="github" />
                     </Link>
                     <Link href={''} className="footerSocialIcons">
-                        <Image src={whatsapp} alt="whatsapp" /> Whatsapp
+                        <Image src={gmail} alt="gmail" />
                     </Link>
-                </div>
-                <div className="footerLinks">
-                    <p>Links</p>
-                </div>
+                    <Link href={''} className="footerSocialIcons">
+                        <Image src={whatsapp} alt="whatsapp" />
+                    </Link>
             </div>
-            <span className={styled.copyright}>all copyright r..</span>
+            <span className={styled.copyright}>@copyright 2023</span>
         </footer>
     )
 }

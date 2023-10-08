@@ -1,4 +1,5 @@
 import Navbar from "@/app/components/navbar/page"
+import FooterBar from "@/app/components/footerbar/page"
 // import Image from "next/image"
 import styled from "./projects.module.css"
 import projectImg from "@/assets/image-project/projectA.jpeg"
@@ -57,7 +58,7 @@ export default function Projects() {
                     ))}
                 </article>
             </section>
-
+            <FooterBar />
         </>
     )
 }

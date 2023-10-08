@@ -37,7 +37,7 @@ export default function Aboutme() {
                     </div>
                 </div>
             </section>
-            <FooterBar />
+            <FooterBar/>
 
         </>
     )
